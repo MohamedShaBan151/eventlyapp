@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Evently App'),
         ),
         body: const Center(
-          child: Text('Hello, Evently!'),
+          child: Text('He'),
         ),
       ),
     );
