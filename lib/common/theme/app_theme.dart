@@ -5,8 +5,14 @@ import 'package:flutter/material.dart';
 class AppTheme {
 
   static ThemeData lightTheme = ThemeData(
+    dividerTheme: DividerThemeData(
+      color: AppColors.maincolor,
+      thickness: 1,
+    ),
     scaffoldBackgroundColor: AppColors.lightbgcolor,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.maincolor,),
+    hintColor: AppColors.greycolor,
+    hoverColor: AppColors.greycolor,
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.lightbgcolor,
       iconTheme: IconThemeData(color: AppColors.maincolor),
@@ -22,8 +28,14 @@ class AppTheme {
 
   );
   static ThemeData darkTheme = ThemeData(
+    dividerTheme: DividerThemeData(
+      color: AppColors.maincolor,
+      thickness: 1,
+    ),
     scaffoldBackgroundColor: AppColors.darkbgcolor,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.maincolor, ),
+    hintColor: AppColors.maincolor,
+    hoverColor: AppColors.darktextcolor,
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.darkbgcolor,
       iconTheme: IconThemeData(color: AppColors.maincolor),
