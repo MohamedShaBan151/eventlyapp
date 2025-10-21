@@ -42,6 +42,9 @@ class $AssetsIconGen {
   AssetGenImage get googleIcon =>
       const AssetGenImage('assets/icon/google_icon.png');
 
+  /// File path: assets/icon/heart.svg
+  SvgGenImage get heart => const SvgGenImage('assets/icon/heart.svg');
+
   /// File path: assets/icon/imail_icon.png
   AssetGenImage get imailIcon =>
       const AssetGenImage('assets/icon/imail_icon.png');
@@ -53,6 +56,38 @@ class $AssetsIconGen {
   SvgGenImage get personIcon =>
       const SvgGenImage('assets/icon/person_icon.svg');
 
+  /// File path: assets/icon/selected_heart_icon.svg
+  SvgGenImage get selectedHeartIcon =>
+      const SvgGenImage('assets/icon/selected_heart_icon.svg');
+
+  /// File path: assets/icon/selected_home_icon.svg
+  SvgGenImage get selectedHomeIcon =>
+      const SvgGenImage('assets/icon/selected_home_icon.svg');
+
+  /// File path: assets/icon/selected_location_icon.svg
+  SvgGenImage get selectedLocationIcon =>
+      const SvgGenImage('assets/icon/selected_location_icon.svg');
+
+  /// File path: assets/icon/selected_person_icon.svg
+  SvgGenImage get selectedPersonIcon =>
+      const SvgGenImage('assets/icon/selected_person_icon.svg');
+
+  /// File path: assets/icon/unselected_heart_icon.svg
+  SvgGenImage get unselectedHeartIcon =>
+      const SvgGenImage('assets/icon/unselected_heart_icon.svg');
+
+  /// File path: assets/icon/unselected_home_icon.svg
+  SvgGenImage get unselectedHomeIcon =>
+      const SvgGenImage('assets/icon/unselected_home_icon.svg');
+
+  /// File path: assets/icon/unselected_location_icon.svg
+  SvgGenImage get unselectedLocationIcon =>
+      const SvgGenImage('assets/icon/unselected_location_icon.svg');
+
+  /// File path: assets/icon/unselected_person_icon.svg
+  SvgGenImage get unselectedPersonIcon =>
+      const SvgGenImage('assets/icon/unselected_person_icon.svg');
+
   /// List of all assets
   List<dynamic> get values => [
     amercaIcon,
@@ -62,9 +97,81 @@ class $AssetsIconGen {
     emailIcon,
     eyeIcon,
     googleIcon,
+    heart,
     imailIcon,
     lockIcon,
     personIcon,
+    selectedHeartIcon,
+    selectedHomeIcon,
+    selectedLocationIcon,
+    selectedPersonIcon,
+    unselectedHeartIcon,
+    unselectedHomeIcon,
+    unselectedLocationIcon,
+    unselectedPersonIcon,
+  ];
+}
+
+class $AssetsImageGen {
+  const $AssetsImageGen();
+
+  /// File path: assets/image/all_image_dark.png
+  AssetGenImage get allImageDark =>
+      const AssetGenImage('assets/image/all_image_dark.png');
+
+  /// File path: assets/image/birthday_image_dark.png
+  AssetGenImage get birthdayImageDark =>
+      const AssetGenImage('assets/image/birthday_image_dark.png');
+
+  /// File path: assets/image/bookclub_image_dark.png
+  AssetGenImage get bookclubImageDark =>
+      const AssetGenImage('assets/image/bookclub_image_dark.png');
+
+  /// File path: assets/image/eating_image_dark.png
+  AssetGenImage get eatingImageDark =>
+      const AssetGenImage('assets/image/eating_image_dark.png');
+
+  /// File path: assets/image/exhibition_image_dark.png
+  AssetGenImage get exhibitionImageDark =>
+      const AssetGenImage('assets/image/exhibition_image_dark.png');
+
+  /// File path: assets/image/gaming_image_dark.png
+  AssetGenImage get gamingImageDark =>
+      const AssetGenImage('assets/image/gaming_image_dark.png');
+
+  /// File path: assets/image/holiday_image_dark.png
+  AssetGenImage get holidayImageDark =>
+      const AssetGenImage('assets/image/holiday_image_dark.png');
+
+  /// File path: assets/image/meeting_image_dark.png
+  AssetGenImage get meetingImageDark =>
+      const AssetGenImage('assets/image/meeting_image_dark.png');
+
+  /// File path: assets/image/route_image.png
+  AssetGenImage get routeImage =>
+      const AssetGenImage('assets/image/route_image.png');
+
+  /// File path: assets/image/sport_image_dark.png
+  AssetGenImage get sportImageDark =>
+      const AssetGenImage('assets/image/sport_image_dark.png');
+
+  /// File path: assets/image/workshop_image_dark.png
+  AssetGenImage get workshopImageDark =>
+      const AssetGenImage('assets/image/workshop_image_dark.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    allImageDark,
+    birthdayImageDark,
+    bookclubImageDark,
+    eatingImageDark,
+    exhibitionImageDark,
+    gamingImageDark,
+    holidayImageDark,
+    meetingImageDark,
+    routeImage,
+    sportImageDark,
+    workshopImageDark,
   ];
 }
 
@@ -72,6 +179,7 @@ class Assets {
   const Assets._();
 
   static const $AssetsIconGen icon = $AssetsIconGen();
+  static const $AssetsImageGen image = $AssetsImageGen();
 }
 
 class AssetGenImage {

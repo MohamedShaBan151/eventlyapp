@@ -40,14 +40,14 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 20),
               CustomTextFeild(
                 hintText: 'password',
-                prefixIcon: Assets.icon.emailIcon.svg(),
+                prefixIcon: Assets.icon.eyeIcon.svg(),
               ),
               Row(mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   TextButton(
                     onPressed: () {},
                     child: const Text(
-                      'forgot password?',
+                      'forgot password?', 
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
