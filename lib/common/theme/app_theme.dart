@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 class AppTheme {
 
   static ThemeData lightTheme = ThemeData(
+    splashColor: AppColors.maincolor,
+    cardColor: AppColors.lightbgcolor,
+    focusColor: AppColors.lightbgcolor,
     dividerTheme: DividerThemeData(
       color: AppColors.maincolor,
       thickness: 1,
@@ -25,9 +28,23 @@ class AppTheme {
       
     ),
     textTheme: _gettextTheme(AppColors.ligttextcolor),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      // elevation: 0,
+      backgroundColor: AppColors.maincolor,
+      selectedItemColor: AppColors.lightbgcolor,
+      unselectedItemColor: AppColors.lightbgcolor,
+      showSelectedLabels: false,
+      showUnselectedLabels: true,
+      type: BottomNavigationBarType.fixed,
+      unselectedLabelStyle: TextStyle(
+        color: AppColors.lightbgcolor,fontSize: 12, fontWeight: FontWeight.bold
+      ),
+    ),
 
   );
   static ThemeData darkTheme = ThemeData(
+    splashColor: AppColors.lightbgcolor,
+    focusColor: AppColors.maincolor,
     dividerTheme: DividerThemeData(
       color: AppColors.maincolor,
       thickness: 1,
@@ -48,6 +65,18 @@ class AppTheme {
       
     ),
     textTheme: _gettextTheme(AppColors.darktextcolor),
+     bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      elevation: 20,
+      backgroundColor: AppColors.darkbgcolor,
+      selectedItemColor: AppColors.lightbgcolor,
+      unselectedItemColor: AppColors.lightbgcolor,
+      showSelectedLabels: false,
+      showUnselectedLabels: true,
+      type: BottomNavigationBarType.fixed,
+      unselectedLabelStyle: TextStyle(
+        color: AppColors.lightbgcolor,fontSize: 12, fontWeight: FontWeight.bold
+      ),
+    ),
   );
 
   static TextTheme _gettextTheme (Color textcolor) {
